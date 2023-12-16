@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bs-warning: #ffc107;
+}
+
+p {
+    font-family: Jost, sans-serif;
+    color: rgb(84, 84, 84);
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+body, html {
+    background-color: #000;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.socials a {
+    padding: 10px;
+    color:#fff;
+    transition: all .5s ease-in-out;
+}
+
+.socials a:hover i {
+    transition: all .5s ease-in-out;
+    transform: rotateY(180deg);
+    color: #ffc107;
+}
+
+.phone button {
+    padding: 10px 30px;
+    border: 1px solid #ffc107;
+}
+
+.phone button a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/*header*/
+
+/*nav*/
+.navbar-toggler {
+  background-color: #fff;
+}
+.navbar-nav .nav-item .nav-link {
+    padding: 15px 20px;
+    line-height: 2;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 3px;
+    background-color: #ffc107;
+    transition: transform .5s ease-in-out;
+    transform: scale(0);
+    transform-origin: left;
+}
+
+.nav-link:hover::before {
+    transition: transform .5s ease-in-out;
+    transform: scale(1);
+}
+
+/*nav*/
+
+/*background image at the start*/
+.bg-start {
+    background: url("https://preview.colorlib.com/theme/cakeshop/assets/img/hero/h1_hero1.jpg.webp") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.bg-content .btn {
+    border: 1px solid #ffc107;
+    color:#000;
+    background-color: #ffc107;
+    padding: 20px 40px;
+    margin-top: 3%;
+    
+}
+
+.bg-content .btn:hover {
+    background-color: inherit;
+    color: #ffc107;
+}
+
+/*bg-content ended*/
+#collapsibleNavbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgers {
+    position: relative;
+    overflow: hidden;   
+}
+.burgers::before {
+    content:'';
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 3px;
+    background-color: #ffc107; 
+
+}
+.third-col h2 {
+    color: rgb(229, 191, 74);
+    font-size: 24px;
+    padding-left: 0px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+/*end of third container */
+
+#forth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-zoom img {
+    transition: transform 0.5s;
+}
+
+.slide-zoom:hover img {
+    transform: scale(1.2);
+    /* You can adjust the scale factor for the desired zoom level */
+}
+
+.slide-zoom::before {
+    content: 'Add To Bag';
+    text-align: center;
+    line-height: 3;
+    font-size: 1rem;
+    font-weight: 800;
+    position: absolute;
+    top: 370px;
+    width: 100%;
+    height: 20%;
+    background-color: #ffc107;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+}
+
+.slide-zoom:hover::before {
+    top: 80%;
+}
+
+/*forth container is end*/
+.video-container {
+    position: relative;
+  }
+  .thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://preview.colorlib.com/theme/cakeshop/assets/img/gallery/video-bg.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+
+  #youtubeVideo {
+    width: 100%;
+    height: 450px;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background-color: #ffc107;
+    border: 1px solid white;
+    padding: 20px 30px;
+    border-radius: 50px;
+    z-index: 2;
+  }
+
+  .play-button i {
+    color: #000;
+    font-size: 25px;
+ }
+
+  .play-button:hover {
+    background-color: #fff;
+  }
+
+  #sixth-container {
+    margin-top: 10%;
+  }
+
+  .feedback {
+    padding: 30px;
+  }
+
+  .stars i {
+    color: #ffc107;
+  }
+
+  /*sith-container is ended*/
+  /*------------------------------------------------------------------------------------------*/
+  #seventh-container {
+    margin-top: 10%;
+    position: relative;
+  }
+
+  #seventh-container .row {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .blog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+
+  .blog-button .btn {
+    padding: 20px 40px;
+    border: 1px solid #ffc107;
+    color: #000;
+    background-color: #ffc107;
+  }
+
+  .blog-button .btn:hover{
+    color: #ffc107;
+    background-color: transparent;
+  }
+
+  .blog {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .blog img {
+    width:65%;
+  }
+  .blog-details h5 {
+    color: #ffc107;
+    font-weight: 100;
+  }
+
+  .blog-details a {
+    color: #ffc107;
+    position: relative;
+    text-decoration: none;
+  }
+  .blog-details a::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    height: 3px;
+    width: 100%;
+    background-color: #ffc107;
+  }
+
+  #eigth-container {
+    margin-top: 15%;
+  }
+
+  .follow .btn {
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 5px 50px;
+    height: 50px;
+  }
+
+  .follow .btn p {
+    color: #ffc107;
+  }
+
+  #ninth-container {
+    margin-top: 10%;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-contents a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+
+  .nav-contents a:hover {
+    color: #ffc107;
+  }
+
+  .footer .row {
+    border-top: .2px solid #6c757d;
+    border-bottom: .2px solid #6c757d;
+    padding: 50px;
+  }
+
+  .footer-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: .2px solid #6c757d;
+    height: 60px;
+    padding: 10px 30px;
+  }
+  .footer-buttons .btn p {
+    color: #fff;
+  }
